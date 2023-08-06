@@ -1,2 +1,2 @@
 # anki-openrussian
-Anki Database Generator using OpenRussian.org database
+Anki Deck Generator using OpenRussian.org database
