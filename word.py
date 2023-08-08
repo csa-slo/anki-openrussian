@@ -23,7 +23,9 @@ class Word:
         return self.word
     def get_translations(self):
         return self.translations
+    def get_translations_as_string(self):
+        return '"' + ', '.join(self.translations) + '"'
 
     def __str__(self):
         sep = '\t'
-        return self.word + sep + str(self.translations) + sep + self.rank + sep + self.url + '\n'
+        return self.word + sep + self.get_translations_as_string() + sep + self.rank + sep + self.url + '\n'
